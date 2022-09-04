@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Field Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <section>
+        <p>
+            First Number : <input type="text" onchange="" id="firstNumber">
+        </p>
+        <p>
+            Second Number : <input type="text" id="secondNumber">
+        </p>
+        <input type="button" onclick="add()" value="Add">
+        <input type="button" onclick="subtract()" value="Subtract">
+        <input type="button" onclick="multiply()" value="Multiply">
+        <input type="button" onclick="divide()" value="Divide">
+        <p>The result is : <br>
+        <span id="result"></span>
+        </p>
+    </section>
 </body>
 </html>
