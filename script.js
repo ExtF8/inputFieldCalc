@@ -1,19 +1,21 @@
-let num1 = Number(document.getElementById('firstNumber').value);
-let num2 = Number(document.getElementById('secondNumber').value);
+const num1 = Number(document.getElementById('firstNumber').value);
+const num2 = Number(document.getElementById('secondNumber').value);
 let result = document.getElementById('result');
 
-const add = function() {
+
+
+add = () => {
     return result.innerText = num1 + num2;
 }
 
-const subtract = function() {
+subtract = () => {
     return result.innerText = num1 - num2;
 }
 
-const multiply = function() {
+multiply = () => {
     return result.innerText = num1 * num2;
 }
 
-const divide = function() {
+divide = () => {
     return result.innerText = num1 / num2;
 }
