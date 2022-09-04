@@ -1,5 +1,5 @@
-const num1 = Number(document.getElementById('firstNumber').value);
-const num2 = Number(document.getElementById('secondNumber').value);
+let num1 = Number(document.getElementById('firstNumber').value);
+let num2 = Number(document.getElementById('secondNumber').value);
 let result = document.getElementById('result');
 
 
@@ -19,3 +19,4 @@ multiply = () => {
 divide = () => {
     return result.innerText = num1 / num2;
 }
+
