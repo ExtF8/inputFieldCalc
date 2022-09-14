@@ -2,8 +2,6 @@ let num1 = Number(document.getElementById('firstNumber').value);
 let num2 = Number(document.getElementById('secondNumber').value);
 let result = document.getElementById('result');
 
-
-
 add = () => {
     return result.innerText = num1 + num2;
 }
@@ -14,19 +12,14 @@ subtract = () => {
 
 // multiply without * , with cycle - for/while/
 
-// multiply = () => {
-//     let results = num1;
-//     for (let i = 0; i <= num2; i++) {
-//         results = i * num1;
-//     }
-//     return result.innerText = results;
-// }
+multiply = () => {
 
-let results = num1;
-for (let i = 0; i <= num2; i++) {
-    results = i * num1;
+    let results = 0;
+    for (let i = 0; i < num2; i++) {
+        results = results + num1;
+    }
+    result.innerText = results;
 }
-console.log(results);
 
 // multiply = () => {
 //     return result.innerText = num1 * num2;
