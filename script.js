@@ -44,16 +44,15 @@ subtract = () => {
 // multiply without * , with cycle - for/while/
 
 multiply = () => {
-    let f = num1;
-    let i = num2;
-
-    ++i;
-    while(i < 4) {
-        f = f * i;
-        ++i;
+    let i = 0;
+    let output = 0;
+    while(i < num2) {
+        output += num1;
+        i++;
+        console.log("i:", i, "output:", output);
     }
+    return result.innerText = output; 
 
-    console.log("i:", i, "f:", f);
 }
 
 // multiply = () => {
